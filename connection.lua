@@ -42,6 +42,8 @@ function createDatabase(applyRichStructure)
     dbFileContent = fromJSON(fileRead(dbFile, fileGetSize(dbFile)))
     return true 
 end 
+createDatabase(true)
+
 addEventHandler('onResourceStart', resourceRoot, function()
     dbFile = fileOpen('databases/' .. dbname .. '.json', false)
     dbFileContent = fromJSON(fileRead(dbFile, fileGetSize(dbFile)))

@@ -1,3 +1,11 @@
+function buildConnection()
+    if dbFile then
+        fileClose(dbFile)
+    end
+    dbFile = fileOpen('databases/' .. dbname .. '.json', false)
+    dbFileContent = fromJSON(fileRead(dbFile, fileGetSize(dbFile)))
+end
+
 function table.slice(tbl, first, last, step)
     local sliced = {}
 
@@ -61,13 +69,7 @@ function delContent()
     buildConnection()
 end 
 
-function buildConnection()
-    if dbFile then 
-        fileClose(dbFile)
-    end 
-    dbFile = fileOpen('databases/' .. dbname .. '.json', false)
-    dbFileContent = fromJSON(fileRead(dbFile, fileGetSize(dbFile)))
-end 
+
 
 function getDatabaseSections()
     buildConnection()

@@ -3,6 +3,7 @@
 
 function insertData(toSection, values) -- values: table, toSection: str
     buildConnection()
+
     local sectionContent = dbFileContent['dbcontent'][toSection]
     local sectionBaseStructure = sectionContent['baseStructure']
     local id = math.random(1, 99999)
@@ -22,8 +23,9 @@ function insertData(toSection, values) -- values: table, toSection: str
     fileWrite(dbFile, dataJSON)
     fileFlush(dbFile)
     buildConnection()
-end 
 
+    return true
+end 
 
 
 -- UPDATE accounts, SET id TO 5, WHERE username is 'astreal'
@@ -64,5 +66,7 @@ function updateData(inSection, whichData, toValue, whereData, whereValue)
     fileWrite(dbFile, dataJSON)
     fileFlush(dbFile)
     buildConnection()
+
+    return true
 end 
 

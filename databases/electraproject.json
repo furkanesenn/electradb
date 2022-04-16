@@ -3,29 +3,11 @@
 		"dbdesc":"A wild database",
 		"dbcontent":{
 			"accounts":{
-				"56358":[
-					"a",
-					"anan",
-					"",
-					""
-				],
-				"126":[
-					"non",
-					"anan",
-					"non",
-					""
-				],
-				"13":[
-					"2",
-					"ana2n",
-					"furkan2",
-					"furkan@"
-				],
-				"1":[
-					"2",
-					"ana2n",
-					"furkan2",
-					"furkan@"
+				"74660":[
+					"5",
+					"Furkan",
+					"deneme",
+					"abc"
 				],
 				"baseStructure":[
 					[
@@ -48,6 +30,12 @@
 						"str",
 						""
 					]
+				],
+				"17411":[
+					"3",
+					"Esen",
+					"dunya",
+					"abc"
 				]
 			}
 		},
