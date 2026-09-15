@@ -1,4 +1,0 @@
-function connection() {
-    return connection()
-};
-
